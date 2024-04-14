@@ -3,8 +3,8 @@ Created specially for SPS, SOS, SOU Hradebni in Hradec Kralove. Use czech langua
 
 Download CzechArduino files. Insert it in C:\Documents\Arduino\libraries here make folder named: "CzechArduino". In your code for Arduino define it with: #include "CzechArduino.h". The code pointer is located in lib.ino in the main branch.
 
-Methods:\n
-  vypis(String text) = System.println(String text)\n
+Methods:
+  vypis(String text) = System.println(String text)
   pokud = if
   nebo_pokud = else if
   jinak = else 
