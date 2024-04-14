@@ -14,7 +14,7 @@ Methods:<br>
   ne = false<br>
   nic = NULL/nullptr<br>
   vrat = return<br>
-  vypisTeplotu = readTemperature (pouziva se u DHT11, DHT22,DHT23)<br>
+  vypisTeplotu = readTemperature (used at DHT11, DHT22,DHT23)<br>
   zacni = begin (dht.begin)<br>
   cislo = int type<br>
   desetinne = float type<br>
