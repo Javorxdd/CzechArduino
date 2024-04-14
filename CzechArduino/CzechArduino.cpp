@@ -28,8 +28,8 @@ void komunikace(int rychlost) {
 }
 
 char cti() {
-  while (!Serial.available()); // Čeká na dostupnost dat ve vstupním bufferu
-  return Serial.read(); // Vrací přečtený znak
+  while (!Serial.available());
+  return Serial.read();
 }
 
 
