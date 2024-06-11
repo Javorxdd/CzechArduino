@@ -19,5 +19,5 @@ Methods:<br>
   cislo = int type<br>
   desetinne = float type<br>
   pismeno = char type<br>
-  rozhodni = bool (returns true, false or statement)
+  rozhodni = bool (returns true or false statement)
   
