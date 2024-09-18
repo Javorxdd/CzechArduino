@@ -22,7 +22,7 @@ void opakuj() {
   vypis("Teplota v typu inteager: " + String(teplota));
   //Vypiseme si teplotu v float, tedy v desetinnem cislu (25,78;26,31;...), promennou teplota musime prevest na String, abychom to mohli vypsat po seriove lince
   desetinne teplota2 = Teplomer.vypisTeplotu();
-  vypis("Teplota, v typu float: " + String(teplota2));
+  vypis("Teplota v typu float: " + String(teplota2));
   //Pro lepsi cteni pridame zpozdeni, tzn. kazdych 5 vterin se provede kod nahore
   pockej(5000);
 
