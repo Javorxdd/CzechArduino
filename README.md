@@ -6,6 +6,9 @@ Download CzechArduino files. Insert it in C:\Documents\Arduino\libraries here ma
 > [!IMPORTANT]
 > This library is under maintence.
 
+> [!IMPORTANT]
+> If you want to help with code always type your version, which you can found in CzechArduino.h.
+
 ## Getting started
 Now we will make some easy code for you.
 
