@@ -14,7 +14,14 @@
  * limitations under the License.
  */
 
+//VERSION 1.2
+
 #include "CzechArduino.h"
+
+#define MAX_NUMBERS 100
+
+long cisla[MAX_NUMBERS];
+int aktualniPocet = 0; 
 
 void vypis(String text) {
   Serial.println(text);
@@ -23,14 +30,43 @@ void vypis(String text) {
 void pockej(int cas) {
   delay(cas);
 }
-void komunikace(int rychlost) {
+void komunikace(unsigned long rychlost) {
   Serial.begin(rychlost);
 }
 
 char cti() {
-  while (!Serial.available());
+  while (!Serial.available())
+  {
+    Serial.println("Cteni serialu neni mozne.");
+    return false;
+  }
   return Serial.read();
 }
 
+long nahodneCislo(long stopCislo, int pocet) {
+  return nahodneCislo(0, stopCislo, pocet);
+}
 
+long nahodneCislo(long startCislo, long stopCislo, int pocet) {
+  
+  long cisla[MAX_NUMBERS];
+  int aktualniPocet = 0;
 
+  for (int i = 0; i < pocet; i++) {
+    if (aktualniPocet < MAX_NUMBERS) {
+      long cislo = random(startCislo, stopCislo);
+      cisla[aktualniPocet] = cislo;
+      aktualniPocet++;
+    } else {
+      Serial.println("Pole čísel bylo naplněno.");
+      break;
+    }
+  }
+
+  if (aktualniPocet > 0) {
+    int nahodnyIndex = random(0, aktualniPocet);
+    return cisla[nahodnyIndex];
+  }
+
+  return -1;
+}

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024 Jiri Javurek
+ * Copyright (C) 2024 Jiri "Javor" Javurek
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,8 +14,14 @@
  * limitations under the License.
  */
 
+//VERSION 1.2
+
 #ifndef CzechArduino_h
 #define CzechArduino_h
+
+//#include "Arduino.h"
+
+
 #define pokud if
 #define jinak else
 #define opakuj loop
@@ -33,12 +39,13 @@ using desetinne = float;
 using rozhodni = bool;
 using pismeno = char;
 
-#include "Arduino.h"
 
 void vypis(String text);
-void pockej(int cas);
-void komunikace(int rychlost);
+void pockej(int ms);
+void komunikace(unsigned long rychlost);
 char cti();
+long nahodneCislo(long startCislo, long stopCislo, int pocet);
+long nahodneCislo(long stopCislo, int pocet);
 
 
 
