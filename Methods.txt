@@ -1,0 +1,28 @@
+# Methods
+
+Some definitions.
+
+1) pokud (if alias)
+2) jinak (else alias)
+3) opakuj (loop alias)
+4) start (setup alias)
+5) ano (true alias)
+6) ne (false alias)
+7) nebo_pokud (else if alias)
+8) nic (NULL alias)
+9) vrat (return alias)
+10) vypisTeplotu (readTemperature alias (only for DHT11 or DHT22)
+11) zacni (begin alias)
+12) cislo (int alias)
+13) desetinne (float alias)
+14) rozhodni (bool alias)
+15) pismeno (char alias)
+
+This methods you can use in your Arduino project!
+
+1) void vypis expects text
+2) void pockej expects time in ms
+3) void komunikace expects number
+4) char cti() nothing is expected
+5) long nahodneCislo(long startCislo, long stopCislo, int pocet) expects start number, stop number and how many numbers to save so it doesn't repeat
+6) long nahodneCislo(long stopCislo, int pocet) expects stop number and how many numbers to save so it doesn't repeat (start number is defined as 0)
