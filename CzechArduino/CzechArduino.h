@@ -19,7 +19,7 @@
 #ifndef CzechArduino_h
 #define CzechArduino_h
 
-//#include "Arduino.h"
+#include "Arduino.h"
 
 
 #define pokud if
