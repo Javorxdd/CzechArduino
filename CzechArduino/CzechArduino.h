@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-//VERSION 1.2
+//VERSION 1.3.1
 
 #ifndef CZECH_ARDUINO_H
 #define CZECH_ARDUINO_H
@@ -24,8 +24,8 @@
 
 #define pokud if
 #define jinak else
-#define opakuj loop
-#define start setup
+#define smycka loop
+#define nastaveni setup
 #define ano true
 #define ne false
 #define nebo_pokud else if
@@ -33,6 +33,8 @@
 #define vrat return
 #define vypisTeplotu readTemperature
 #define zacni begin
+#define vstup INPUT
+#define vystup OUTPUT
 
 using cislo = int;
 using desetinne = float;
