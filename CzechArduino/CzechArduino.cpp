@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024 Jiri Javurek
+ * Copyright (C) 2024 Jiri "Javor" Javurek
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,6 +41,14 @@ uint8_t rezimPinu(int pin, uint8_t typ) {
 
 uint8_t ctiPin(int pin) {
   return digitalRead(pin);
+}
+
+uint8_t ctiAnalog(int pin) {
+  return analogRead(pin);
+}
+
+void zapisAnalog(int pin, int hodnota) {
+  analogWrite(pin, hodnota);
 }
 
 char cti() {

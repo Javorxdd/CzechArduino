@@ -42,6 +42,8 @@ using pismeno = char;
 
 const uint8_t vstup = INPUT;
 const uint8_t vystup = OUTPUT;
+const uint8_t vysokyStav = HIGH;
+const uint8_t nizkyStav = LOW;
 
 
 void vypis(String text);
@@ -52,6 +54,8 @@ long nahodneCislo(long startCislo, long stopCislo, int pocet);
 long nahodneCislo(long stopCislo, int pocet);
 uint8_t rezimPinu(int pin, uint8_t typ);
 uint8_t ctiPin(int pin);
+uint8_t ctiAnalog(int pin);
+void zapisAnalog(int pin, int hodnota);
 
 
 #endif
