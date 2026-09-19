@@ -12,6 +12,9 @@ Download CzechArduino files. Insert it in C:\Documents\Arduino\libraries here we
 ## Getting started
 Now we will make some easy code for you.
 
+> [!IMPORTANT]
+> Big thanks to mister Krtkus, who gives me ideas what to add!
+
 ```
 //for first, we will define CA library
 
