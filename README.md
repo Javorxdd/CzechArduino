@@ -17,15 +17,26 @@ Now we will make some easy code for you.
 
 #include "CzechArduino.h"
 
+cislo vstupniPin = 10;
+cislo vystupniAnalogPin = A1;
+
 void zacni() {
   //set Serial speed 115200 baud
   komunikace(115200);
+  rezimPinu(vstupniPin, vstup);
+  rezimPinu(vystupniAnalogPin, vystup);
 }
 
 void opakuj() {
+
+  cislo stav = ctiPin(vstupniPin);
   //easy loop method
   vypis("Ahoj z CzechArduino!");
-  //give it some time, or your Arduino/ESP will be bricked 💀
+  pokud (stav == vysokyStav) {
+    vypis("Vstup na pinu 10 je vysoky!");
+  } nebo_pokud (stav == nizkyStav) {
+    zapisAnalog(vystupniAnalogPin, 125);
+  }
   pockej(10000); //you need to type time in ms
 }
 ```
