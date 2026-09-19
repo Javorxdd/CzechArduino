@@ -17,6 +17,10 @@ Some definitions.
 13) desetinne (float alias)
 14) rozhodni (bool alias)
 15) pismeno (char alias)
+16) vstup (INPUT alias)
+17) vystup (OUTPUT alias)
+18) vysokyStav (HIGH alias)
+19) nizkyStav (LOW alias)
 
 This methods you can use in your Arduino project!
 
@@ -26,3 +30,7 @@ This methods you can use in your Arduino project!
 4) char cti() nothing is expected
 5) long nahodneCislo(long startCislo, long stopCislo, int pocet) expects start number, stop number and how many numbers to save so it doesn't repeat
 6) long nahodneCislo(long stopCislo, int pocet) expects stop number and how many numbers to save so it doesn't repeat (start number is defined as 0)
+7) uint8_t rezimPinu(int pin, uint8_t typ) expects number of input pin and type of pin input/output
+8) uint8_t ctiPin(int pin) expects only number of input pin
+9) uint8_t ctiAnalog(int pin) expects pin to read in analog
+10) void zapisAnalog(int pin, int value) expects number of analog pin (A0-A5 acceptable) and value of output PWM (0-255)
