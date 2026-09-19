@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-//VERSION 1.2
+//VERSION 1.3.1
 
 #include "CzechArduino.h"
 
@@ -32,6 +32,10 @@ void pockej(int cas) {
 }
 void komunikace(unsigned long rychlost) {
   Serial.begin(rychlost);
+}
+
+void rezimPinu(int pin, String typ) {
+  pinMode(pin, typ);
 }
 
 char cti() {
