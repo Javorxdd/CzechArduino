@@ -31,7 +31,7 @@ void opakuj() {
 ```
 
 > [!TIP]
-> If you point to a method and use ctrl and click it will show you what values the method requires.
+> If you point to a method and use ctrl and click, it will show you what values the method requires.
 
 > [!NOTE]
 > In „komunikace“ you can use any value which Arduino IDE supports.
@@ -39,4 +39,4 @@ void opakuj() {
 > [!WARNING]
 > Dont forgot to use delay which is „pockej“ or your Arduino will be bricked!
 
-Nice! This is probably first code, which you make with CA library.
+Nice! This is probably first code, which you made with CA library.
