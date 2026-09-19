@@ -32,7 +32,7 @@
 #define nic NULL
 #define vrat return
 #define vypisTeplotu readTemperature
-#define zacni setup
+#define zacni begin
 
 using cislo = int;
 using desetinne = float;
