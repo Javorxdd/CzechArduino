@@ -16,10 +16,10 @@
 
 //VERSION 1.2
 
-#ifndef CzechArduino_h
-#define CzechArduino_h
+#ifndef CZECH_ARDUINO_H
+#define CZECH_ARDUINO_H
 
-#include "Arduino.h"
+#include <Arduino.h>
 
 
 #define pokud if
@@ -32,7 +32,7 @@
 #define nic NULL
 #define vrat return
 #define vypisTeplotu readTemperature
-#define zacni begin
+#define zacni setup
 
 using cislo = int;
 using desetinne = float;
