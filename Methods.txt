@@ -34,3 +34,4 @@ This methods you can use in your Arduino project!
 8) uint8_t ctiPin(int pin) expects only number of input pin
 9) uint8_t ctiAnalog(int pin) expects pin to read in analog
 10) void zapisAnalog(int pin, int value) expects number of analog pin (A0-A5 acceptable) and value of output PWM (0-255)
+11) void zapisDigital(int pin, int stav) expects number of digital pin and value of output (vysokyStav or nizkyStav for 1 or 0)
