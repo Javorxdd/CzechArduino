@@ -48,7 +48,7 @@ void komunikace(unsigned long rychlost);
 char cti();
 long nahodneCislo(long startCislo, long stopCislo, int pocet);
 long nahodneCislo(long stopCislo, int pocet);
-
+void rezimPinu(int pin, String typ);
 
 
 #endif
