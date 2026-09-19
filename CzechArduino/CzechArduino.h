@@ -33,14 +33,15 @@
 #define vrat return
 #define vypisTeplotu readTemperature
 #define zacni begin
-#define vstup INPUT
-#define vystup OUTPUT
 
 using cislo = int;
 using desetinne = float;
 using rozhodni = bool;
 using pismeno = char;
 
+
+const uint8_t vstup = INPUT;
+const uint8_t vystup = OUTPUT;
 
 void vypis(String text);
 void pockej(int ms);
