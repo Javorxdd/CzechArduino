@@ -56,6 +56,7 @@ uint8_t rezimPinu(int pin, uint8_t typ);
 uint8_t ctiPin(int pin);
 uint8_t ctiAnalog(int pin);
 void zapisAnalog(int pin, int hodnota);
+void zapisDigital(int pin, int hodnota);
 
 
 #endif

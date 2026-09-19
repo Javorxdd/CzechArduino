@@ -34,6 +34,14 @@ void komunikace(unsigned long rychlost) {
   Serial.begin(rychlost);
 }
 
+void zapisAnalog(int pin, int hodnota) {
+  analogWrite(pin, hodnota);
+}
+
+void zapisDigital(int pin, int hodnota) {
+  digitalWrite(pin, hodnota);
+}
+
 uint8_t rezimPinu(int pin, uint8_t typ) {
   pinMode(pin, typ);
   return typ;
@@ -47,9 +55,6 @@ uint8_t ctiAnalog(int pin) {
   return analogRead(pin);
 }
 
-void zapisAnalog(int pin, int hodnota) {
-  analogWrite(pin, hodnota);
-}
 
 char cti() {
   while (!Serial.available())
