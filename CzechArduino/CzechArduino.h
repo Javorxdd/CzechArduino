@@ -34,14 +34,15 @@
 #define vypisTeplotu readTemperature
 #define zacni begin
 
+
 using cislo = int;
 using desetinne = float;
 using rozhodni = bool;
 using pismeno = char;
 
-
 const uint8_t vstup = INPUT;
 const uint8_t vystup = OUTPUT;
+
 
 void vypis(String text);
 void pockej(int ms);
@@ -49,7 +50,8 @@ void komunikace(unsigned long rychlost);
 char cti();
 long nahodneCislo(long startCislo, long stopCislo, int pocet);
 long nahodneCislo(long stopCislo, int pocet);
-void rezimPinu(int pin, String typ);
+uint8_t rezimPinu(int pin, uint8_t typ);
+uint8_t ctiPin(int pin);
 
 
 #endif

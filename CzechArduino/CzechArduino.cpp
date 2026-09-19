@@ -34,8 +34,13 @@ void komunikace(unsigned long rychlost) {
   Serial.begin(rychlost);
 }
 
-void rezimPinu(int pin, String typ) {
+uint8_t rezimPinu(int pin, uint8_t typ) {
   pinMode(pin, typ);
+  return typ;
+}
+
+uint8_t ctiPin(int pin) {
+  return digitalRead(pin);
 }
 
 char cti() {
