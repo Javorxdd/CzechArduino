@@ -5,7 +5,7 @@ Some definitions.
 1) pokud (if alias)
 2) jinak (else alias)
 3) opakuj (loop alias)
-4) start (setup alias)
+4) nastaveni (setup alias)
 5) ano (true alias)
 6) ne (false alias)
 7) nebo_pokud (else if alias)
